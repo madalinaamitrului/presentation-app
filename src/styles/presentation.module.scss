@@ -1,0 +1,21 @@
+.whiteText{
+    color:white;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 1px;
+    display:flex;
+    justify-content: center;
+    animation: move 10s ease-in-out infinite;
+}
+@keyframes move {
+    0% {
+      transform: translateY(200px);
+    }
+    75%{
+        transform:translateY(250px);
+    }
+    100% {
+      transform:translateY(200px);
+    }
+  }
+  

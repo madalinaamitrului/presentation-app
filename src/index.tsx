@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ThemeProvider} from '../src/components/theme-provider';
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <ThemeProvider>
+      <BrowserRouter>
+          <App />
+      </BrowserRouter>
+    </ThemeProvider>,
   document.getElementById('root')
 );
 

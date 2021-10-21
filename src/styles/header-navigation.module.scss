@@ -1,0 +1,23 @@
+@use "./mixins";
+
+.logo.logo {
+  height: 40px;
+  @include mixins.mdscreen() {
+    justify-content: center;
+  }
+}
+.logoContainer.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include mixins.mdscreen() {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+}
+.actions.actions {
+  @include mixins.mdscreen() {
+    display: none;
+  }
+}
